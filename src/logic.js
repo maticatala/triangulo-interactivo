@@ -12,7 +12,7 @@ export function classifyTriangle(a, b, c) {
   }
 
   // Clasificar
-  if (a === b && b === c) return "Equilatero";
+  if (a === b && b === c) return "Equilátero";
   if (a === b || b === c || a === c) return "Isósceles";
   return "Escaleno";
 }
