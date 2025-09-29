@@ -65,7 +65,7 @@ describe('B) Pruebas de Integración (UI a Lógica)', () => {
         // Aserciones de Renderizado (UI):
         expect(appControls.monitor.querySelector('svg')).toBeTruthy();
         expect(appControls.monitor.querySelector('polygon')).toBeTruthy();
-    });
+    })
 
         // --- Caso 2: Isósceles (Clasificación correcta) ---
     it('Debe clasificar y dibujar un Isósceles (5, 5, 8)', () => {
@@ -80,7 +80,7 @@ describe('B) Pruebas de Integración (UI a Lógica)', () => {
         // Aserciones de Renderizado (UI):
         expect(appControls.monitor.innerHTML).toContain('<svg');
         expect(appControls.monitor.innerHTML).toContain('<polygon');
-    });
+    })
 
     // --- Caso 3: Integración con Error de Lógica (PI4: Desigualdad Triangular) ---
     it('Debe clasificar como Inválido y mostrar error para 1, 2, 4', () => {
@@ -94,7 +94,7 @@ describe('B) Pruebas de Integración (UI a Lógica)', () => {
         
         // 3. Verificar que NO se dibujó el SVG
         expect(appControls.monitor.innerHTML).not.toContain('<svg');
-    });
+    })
     
     // --- Caso 4: Integración con Error de Lógica (PI3: No Numérico - Texto) ---
     it('Debe ignorar caracteres no numéricos', () => {
@@ -108,6 +108,6 @@ describe('B) Pruebas de Integración (UI a Lógica)', () => {
 
         // 2. Verificar que NO se dibujó el SVG
         expect(appControls.monitor.innerHTML).not.toContain('<svg');
-    });
+    })
 
 });
