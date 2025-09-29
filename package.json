@@ -1,0 +1,21 @@
+{
+  "name": "triangulo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "start": "http-server . -p 8080",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "http-server": "^14.1.1",
+    "jsdom": "^27.0.0",
+    "start-server-and-test": "^2.1.2",
+    "vitest": "^3.2.4"
+  }
+}
