@@ -21,11 +21,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # 🔹 Ejecuta los tests unitarios con Vitest
-      - name: Run Vitest
-        run: npm run test
-
-      # 🔹 Ejecuta cobertura de Vitest
+      # 🔹 Ejecuta tests uniterios y cobertura de Vitest
       - name: Run Vitest Coverage
         run: npm run coverage
 
